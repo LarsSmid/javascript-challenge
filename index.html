@@ -13,20 +13,19 @@
           <a href="file:///E:/School/Projecten%20school/2e%20jaar/javascript%20challenge/index.html"><img src="images/logo-stemwijzer.svg" alt="logo" style="height: 56px; width: 331px;"></a>
           <h1 style="font-family: 'Arial'; font-size: 20px; font-weight: bold;">StemWijzer Tweede Kamer 2018</h1>
           <h2 style="font-size: 22px; font-weight: bold; color: #01B4DC; line-height: 1.3em; padding: 1em 0;">Test uw politieke voorkeur aan de hand van 30 stellingen</h2>
-          <center><p><button class="w3-button w3-black w3-round-xlarge">starten</button></p></center>
+          <center><p><button class="w3-button w3-black w3-round-xxlarge" onclick="start()">starten</button></p></center>
         </div>
       </div>
     </div>
     <div id="vragen" class="w3-row">
       <div class="w3-quarter w3-container">
       </div>
-      <div class="w3-half w3-container w3-round ls-container">
+      <div class="w3-container w3-round ls-container">
         <div style="padding: 20px;">
           <button type="button" name="terug" id="terug" class="w3-btn w3-white w3-border w3-border-black w3-round w3-medium" onclick="vorige()">terug</button>
-          <h1>Welkom bij de stemwijzer.</h1>
+          <a href="file:///E:/School/Projecten%20school/2e%20jaar/javascript%20challenge/index.html"><img src="images/logo-stemwijzer.svg" alt="logo" style="height: 56px; width: 331px;"></a>
           <p>Lees onderstaande stelling en kies een van opties</p>
           <strong><p id="title"></p></strong>
-
           <p id="statement"></p>
           <button type="button" name="oneens" id="oneens" class="w3-btn w3-white w3-border w3-border-black w3-round w3-medium" onclick="oneens()">oneens</button>
           <button type="button" name="geenMening" id="geenMening" class="w3-btn w3-white w3-border w3-border-black w3-round w3-medium" onclick="geenVanBeide()">Geen van beide</button>
