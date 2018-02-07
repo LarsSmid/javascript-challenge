@@ -47,7 +47,7 @@ function eens(){
 		document.getElementById("statement").innerHTML = subject.statement;
 	}else if(currentSubject == subjects.length){
 		document.getElementById("eens").style.visibility = "hidden";
-		document.getElementById("eens").style.visibility = "hidden";
+		document.getElementById("geenMening").style.visibility = "hidden";
 		document.getElementById("oneens").style.visibility = "hidden";
 		document.getElementById("eens").style.visibility = "hidden";
 		document.getElementById("title").innerHTML = "Klaar met de stemwijzer";
@@ -55,6 +55,28 @@ function eens(){
 	}
 
 
+	console.dir(choices);
+}
+
+function geenVanBeide(){
+	choices[currentSubject] = "Geen van beide";
+
+	currentSubject++;
+
+	var subject = subjects[currentSubject];
+
+	if(typeof subject != "undefined") {
+		document.getElementById("title").innerHTML = subject.title;
+		document.getElementById("statement").innerHTML = subject.statement;
+	}else if(currentSubject == subjects.length){
+		document.getElementById("eens").style.visibility = "hidden";
+		document.getElementById("geenMening").style.visibility = "hidden";
+		document.getElementById("oneens").style.visibility = "hidden";
+		document.getElementById("eens").style.visibility = "hidden";
+		document.getElementById("title").innerHTML = "Klaar met de stemwijzer";
+		document.getElementById("statement").innerHTML = "Bekijk hier je resultaten:";
+	}
+	
 	console.dir(choices);
 }
 
@@ -68,27 +90,14 @@ function oneens(){
 	if(typeof subject != "undefined"){
 		document.getElementById("title").innerHTML = (subjects[currentSubject].title);
 		document.getElementById("statement").innerHTML = (subjects[currentSubject].statement);
+	}else if(currentSubject == subjects.length){
+		document.getElementById("eens").style.visibility = "hidden";
+		document.getElementById("geenMening").style.visibility = "hidden";
+		document.getElementById("oneens").style.visibility = "hidden";
+		document.getElementById("eens").style.visibility = "hidden";
+		document.getElementById("title").innerHTML = "Klaar met de stemwijzer";
+		document.getElementById("statement").innerHTML = "Bekijk hier je resultaten:";
 	}
 
 	console.dir(choices);
 }
-/*
-function checkSubject(){
-	console.log("checkSubject");
-	setSubjectNumber();
-	if(currentSubject == 1){
-			console.log("if");
-			document.getElementById("title").innerHTML = (subjects[0].title);
-			document.getElementById("statement").innerHTML = (subjects[0].statement);
-	}
-
-	else if(currentSubject == 2){
-			document.getElementById("title").innerHTML = (subjects[1].title);
-			document.getElementById("statement").innerHTML = (subjects[1].statement);
-			//gekeuze deel = eens
-	}else if(currentSubject == 3){
-			document.getElementById("title").innerHTML = (subjects[2].title);
-			document.getElementById("statement").innerHTML = (subjects[2].statement);
-	}
-}
-*/

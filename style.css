@@ -8,5 +8,7 @@ body{
 }
 .ls-container{
   padding: 20px;
-  background-color: lightblue;
+  background-color: white;
+  width: 75%;
+  margin: 5% 12.5%;
 }
