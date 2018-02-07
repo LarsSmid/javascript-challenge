@@ -40,6 +40,10 @@ var subjects =
 	]
 },
 {
+	title: "teststemming",
+	statement: "dit is een stelling om te testen of hij de stelling test",
+},
+{
 	title: "Maatschappelijke dienstplicht",
 	statement: "Er moet een maatschappelijke dienstplicht voor jongeren komen. Zij kunnen dan dienen in het leger, bij de politie of in de zorg.",
 	parties: [

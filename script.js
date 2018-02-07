@@ -1,27 +1,73 @@
 //set default value
 var currentSubject = 0;
+var choices = [];
+var subject = subjects[currentSubject];
 
-//loop door alle  vragen
-for( let subject of subjects){
+document.getElementById("title").innerHTML = subject.title;
+document.getElementById("statement").innerHTML = subject.statement;
 
-  //console.log(subject);
+console.log(subjects.length);
+//document.getElementById("title").innerHTML = (subjects[currentSubject].title);
+//document.getElementById("statement").innerHTML = (subjects[currentSubject].statement);
+function start(){
+		currentSubject++;
 }
-
-document.getElementById("title").innerHTML = (subjects[currentSubject].title);
-document.getElementById("statement").innerHTML = (subjects[currentSubject].statement);
-
 function volgende(){
-		currentSubject += 1;
-
-		document.getElementById("title").innerHTML = (subjects[currentSubject].title);
-		document.getElementById("statement").innerHTML = (subjects[currentSubject].statement);
+	console.log("volgende");
+	if(currentSubject < subjects.length){
+		currentSubject++;
+		var subject = subjects[currentSubject];
+		document.getElementById("title").innerHTML = (subject.title);
+		document.getElementById("statement").innerHTML = (subject.statement);
+	}else{
+		console.log("apple");
+	}
 }
 
 function vorige(){
-		currentSubject -= 1;
+		currentSubject--;
 
+		if(currentSubject <= -1){
+			currentSubject = 0;
+		}
+
+		document.getElementById("title").innerHTML = (subject.title);
+		document.getElementById("statement").innerHTML = (subject.statement);
+}
+
+function eens(){
+	choices[currentSubject] = "eens";
+
+	currentSubject++;
+
+	console.log(subjects[currentSubject]);
+
+	var subject = subjects[currentSubject];
+
+	if(typeof subject != "undefined") {
+		document.getElementById("title").innerHTML = subject.title;
+		document.getElementById("statement").innerHTML = subject.statement;
+	}
+
+
+	console.dir(choices);
+}
+
+function oneens(){
+	choices[currentSubject] = "oneens";
+
+	currentSubject++;
+
+	console.log(subjects[currentSubject]);
+
+	var subject = subjects[currentSubject];
+	
+	if(typeof subject != "undefined"){
 		document.getElementById("title").innerHTML = (subjects[currentSubject].title);
 		document.getElementById("statement").innerHTML = (subjects[currentSubject].statement);
+	}
+
+	console.dir(choices);
 }
 /*
 function checkSubject(){
