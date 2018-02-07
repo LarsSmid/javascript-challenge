@@ -40,13 +40,18 @@ function eens(){
 
 	currentSubject++;
 
-	console.log(subjects[currentSubject]);
-
 	var subject = subjects[currentSubject];
 
 	if(typeof subject != "undefined") {
 		document.getElementById("title").innerHTML = subject.title;
 		document.getElementById("statement").innerHTML = subject.statement;
+	}else if(currentSubject == subjects.length){
+		document.getElementById("eens").style.visibility = "hidden";
+		document.getElementById("eens").style.visibility = "hidden";
+		document.getElementById("oneens").style.visibility = "hidden";
+		document.getElementById("eens").style.visibility = "hidden";
+		document.getElementById("title").innerHTML = "Klaar met de stemwijzer";
+		document.getElementById("statement").innerHTML = "Bekijk hier je resultaten:";
 	}
 
 
@@ -58,10 +63,8 @@ function oneens(){
 
 	currentSubject++;
 
-	console.log(subjects[currentSubject]);
-
 	var subject = subjects[currentSubject];
-	
+
 	if(typeof subject != "undefined"){
 		document.getElementById("title").innerHTML = (subjects[currentSubject].title);
 		document.getElementById("statement").innerHTML = (subjects[currentSubject].statement);
