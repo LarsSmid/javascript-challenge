@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Javascript Challenge</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
@@ -22,14 +23,11 @@
       </div>
       <div class="w3-container w3-round ls-container">
         <div style="padding: 20px;">
-          <button type="button" name="terug" id="terug" class="w3-btn w3-white w3-border w3-border-black w3-round w3-medium" onclick="vorige()">terug</button>
-          <a href="file:///E:/School/Projecten%20school/2e%20jaar/javascript%20challenge/index.html"><img src="images/logo-stemwijzer.svg" alt="logo" style="height: 56px; width: 331px;"></a>
-          <p>Lees onderstaande stelling en kies een van opties</p>
-          <strong><p id="title"></p></strong>
-          <p id="statement"></p>
-          <button type="button" name="oneens" id="oneens" class="w3-btn w3-white w3-border w3-border-black w3-round w3-medium" onclick="oneens()">oneens</button>
-          <button type="button" name="geenMening" id="geenMening" class="w3-btn w3-white w3-border w3-border-black w3-round w3-medium" onclick="geenVanBeide()">Geen van beide</button>
-          <button type="button" name="eens" id="eens" class="w3-btn w3-white w3-border w3-border-black w3-round w3-medium" onclick="eens(0)">eens</button>
+          <strong><i class="fas fa-arrow-alt-circle-left" onclick="vorige()" style="font-size: 40px;"></i><p id="title" style="font-size: 40px;"></p></strong>
+          <p id="statement" style="font-size: 30px;"></p>
+          <button type="button" name="oneens" id="oneens" class="w3-btn w3-black w3-round w3-medium" onclick="oneens()">oneens</button>
+          <button type="button" name="geenMening" id="geenMening" class="w3-btn w3-black w3-round w3-medium" onclick="geenVanBeide()">Geen van beide</button>
+          <button type="button" name="eens" id="eens" class="w3-btn w3-white w3-black w3-round w3-medium" onclick="eens(0)">eens</button>
           <button type="button" name="volgende" id="volgende" class="w3-btn w3-white w3-border w3-border-black w3-round w3-medium" onclick="volgende()">Sla deze vraag over</button>
         </div>
       </div>

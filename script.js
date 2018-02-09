@@ -32,6 +32,8 @@ function volgende(){
 }
 
 function vorige(){
+
+		console.log("vorige");
 		currentSubject--;
 
 		if(currentSubject <= -1){
@@ -42,12 +44,12 @@ function vorige(){
 
 function eens(){
 	choices[currentSubject] = "eens";
-	currentSubject++;
 
-	if(typeof subject != "undefined") {
-		display();
-	}else if(currentSubject == subjects.length){
-		finish();
+	if(currentSubject < subjects.length-1){
+			currentSubject++;
+			display();
+  }else{
+			finish();
 	}
 
 
@@ -57,14 +59,11 @@ function eens(){
 function geenVanBeide(){
 	choices[currentSubject] = "Geen van beide";
 
-	currentSubject++;
-
-	var subject = subjects[currentSubject];
-
-	if(typeof subject != "undefined") {
-		display();
-	}else if(currentSubject == subjects.length){
-		finish();
+	if(currentSubject < subjects.length-1){
+			currentSubject++;
+			display();
+  }else{
+			finish();
 	}
 
 	console.dir(choices);
@@ -73,14 +72,11 @@ function geenVanBeide(){
 function oneens(){
 	choices[currentSubject] = "oneens";
 
-	currentSubject++;
-
-	var subject = subjects[currentSubject];
-
-	if(typeof subject != "undefined"){
-		display();
-	}else if(currentSubject == subjects.length){
-		finish();
+	if(currentSubject < subjects.length-1){
+			currentSubject++;
+			display();
+  }else{
+			finish();
 	}
 
 	console.dir(choices);
