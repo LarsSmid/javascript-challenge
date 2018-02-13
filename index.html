@@ -23,7 +23,8 @@
       </div>
       <div class="w3-container w3-round ls-container">
         <div style="padding: 20px;">
-          <strong><i class="fas fa-arrow-alt-circle-left" onclick="vorige()" style="font-size: 40px;"></i><p id="title" style="font-size: 40px;"></p></strong>
+          <i class="fas fa-arrow-alt-circle-left" id="vorige" onclick="vorige()" style="font-size: 40px;"></i>
+          <strong><p id="title" style="font-size: 40px;"></p></strong>
           <p id="statement" style="font-size: 30px;"></p>
           <button type="button" name="oneens" id="oneens" class="w3-btn w3-black w3-round w3-medium" onclick="oneens()">oneens</button>
           <button type="button" name="geenMening" id="geenMening" class="w3-btn w3-black w3-round w3-medium" onclick="geenVanBeide()">Geen van beide</button>
@@ -34,5 +35,6 @@
     </div>
   </body>
   <script type="text/javascript" src="http://stemwijzer.dvc-icta.nl/data.js"></script>
+  <script type="text/javascript" src="data.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </html>
