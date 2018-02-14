@@ -19,3 +19,24 @@ var points = [
 	{name: "Artikel 1", countPoints: 0},
 	{name: "Libertarische Partij", countPoints: 0},
 ];
+
+var points2 = {
+	VVD: 0,
+	CDA: 0,
+	PVV: 0,
+	D66: 0,
+	GroenLinks: 0,
+	SP: 0,
+	PvdA: 0,
+	Partij_voor_de_Dieren: 0,
+	SGP: 0,
+	DENK: 0,
+	Forum_voor_Democratie: 0,
+	OndernemersPartij: 0,
+	VNL: 0,
+	Nieuwe_Wegen: 0,
+	De_Burger_beweging: 0,
+	Piratenpartij: 0,
+	Artikel_1: 0,
+	Libertarische_Partij: 0,
+}

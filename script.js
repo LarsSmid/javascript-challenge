@@ -72,14 +72,18 @@ function finish(){
 }
 
 for (var i = 0; i < subjects.length; i++) {
-	console.log(subjects[i].parties[i]);
+	//console.log(subjects[i].parties[i]);
 	for (var x = 0; x < subjects[i].parties.length; x++) {
-		console.log(subjects[i].parties[x].name);
-		console.log(subjects[i].parties[x].position);
-		if(subjects[i].parties[x].position == "contra"){
-			console.log("dit is gelijk aan de partijen");
-			for (var b = 0; b < points.length; b++) {
-				points[b].countPoints++;
+		for (var m = 0; m < choices.length; m++) {
+			if(subjects[i].parties[x].position == choices[m]){
+				//console.log(subjects[i].parties[x].name, subjects[i].parties[x].position, "dit is gelijk aan de partijen");
+
+				for (var y = 0; y < points.length; y++) {
+					if (points[y].name == subjects[i].parties[x].name) {
+						points[y].countPoints++;
+					}
+				}
+
 			}
 		}
 	}
