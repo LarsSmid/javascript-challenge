@@ -24,12 +24,15 @@
       <div class="w3-container w3-round ls-container">
         <div style="padding: 20px;">
           <i class="fas fa-arrow-alt-circle-left" id="vorige" onclick="vorige()" style="font-size: 40px;"></i>
-          <strong><p id="title" style="font-size: 40px;"></p></strong>
-          <p id="statement" style="font-size: 30px;"></p>
+          <strong><p id="title" style="font-size: 30px;"></p></strong>
+          <p id="statement" style="font-size: 20px;"></p>
+          <div id="checkboxes"></div>
+          <div id="lijst"></div>
           <button type="button" name="oneens" id="oneens" class="w3-btn w3-black w3-round w3-medium" onclick="oneens()">oneens</button>
           <button type="button" name="geenMening" id="geenMening" class="w3-btn w3-black w3-round w3-medium" onclick="geenVanBeide()">Geen van beide</button>
-          <button type="button" name="eens" id="eens" class="w3-btn w3-white w3-black w3-round w3-medium" onclick="eens(0)">eens</button>
+          <button type="button" name="eens" id="eens" class="w3-btn w3-white w3-black w3-round w3-medium" onclick="eens()">eens</button>
           <button type="button" name="volgende" id="volgende" class="w3-btn w3-white w3-border w3-border-black w3-round w3-medium" onclick="volgende()">Sla deze vraag over</button>
+          <button type="button" name="resultaat" id="resultaat" class="w3-btn w3-white w3-border w3-border-black w3-round w3-medium" onclick="calculateWeight()">Ga naar het resultaat</button>
         </div>
       </div>
     </div>
